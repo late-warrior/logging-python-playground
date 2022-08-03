@@ -92,7 +92,6 @@ def exception_logging_example():
     try:
         5 / 0
     except Exception as e:
-        # crystal_logger.error("Error Stuff")
         logger.exception("Exception here", extra={"more": "news"})
 
 if __name__ == "__main__":
